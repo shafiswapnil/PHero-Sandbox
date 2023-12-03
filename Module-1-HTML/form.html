@@ -7,7 +7,7 @@
   <title>Module 1 : Learn and Explore HTML</title>
 
   <style>
-    form {
+    .form_1 form {
       margin: 0 auto;
       width: 400px;
       padding: 1em;
@@ -15,45 +15,45 @@
       border-radius: 1em;
     }
 
-    ul {
+    .form_1 ul {
       list-style: none;
       padding: 0;
       margin: 0;
     }
 
-    form li+li {
+    .form_1 form li+li {
       margin-top: 1em;
     }
 
-    label {
+    .form_1 label {
       display: inline-block;
       width: 90px;
       text-align: right;
     }
 
-    input,
-    textarea {
+    .form_1 input,
+    .form_1 textarea {
       font: 1em sans-serif;
       width: 300px;
       box-sizing: border-box;
       border: 1px solid #999;
     }
 
-    input:focus,
-    textare:focus {
+    .form_1 input:focus,
+    .form_1 textare:focus {
       border-color: #000;
     }
 
-    textarea {
+    .form_1 textarea {
       vertical-align: top;
       height: 5em;
     }
 
-    .button {
+    .form_1 .button {
       padding-left: 90px;
     }
 
-    button {
+    .form_1 button {
       margin-left: 0.5em;
     }
   </style>
@@ -64,25 +64,89 @@
   <h2>Module 1: Learn and Explore HTML</h2>
   <h3>HTML Forms</h3>
 
-  <form action="/handle-form-page" method="POST">
-    <ul>
-      <li>
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" name="user_name">
-      </li>
-      <li>
-        <label for="email">Your Email:</label>
-        <input type="email" name="user_email" id="email">
-      </li>
-      <li>
-        <label for="message">Message:</label>
-        <textarea name="user_message" id="message"></textarea>
-      </li>
-      <li class="button">
-        <button type="submit">Send your message</button>
-      </li>
-    </ul>
-  </form>
+  <div class="form_1">
+    <form action="/handle-form-page" method="POST">
+      <ul>
+        <li>
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="user_name">
+        </li>
+        <li>
+          <label for="email">Your Email:</label>
+          <input type="email" name="user_email" id="email">
+        </li>
+        <li>
+          <label for="message">Message:</label>
+          <textarea name="user_message" id="message"></textarea>
+        </li>
+        <li class="button">
+          <button type="submit">Send your message</button>
+        </li>
+      </ul>
+    </form>
+  </div>
+
+  <br>
+
+  <h3>Form 2</h3>
+  <div class="form_2">
+    <form action="" method="">
+      <fieldset>
+        <legend>Fruit Juice Size</legend>
+        <p>
+          <input type="radio" name="size" id="size_1" value="small">
+          <label for="size_1">Small</label>
+        </p>
+        <p>
+          <input type="radio" name="size" id="size_2" value="medium">
+          <label for="size_2">Medium</label>
+        </p>
+        <p>
+          <input type="radio" name="size" id="size_3" value="large">
+          <label for="size_3">Large</label>
+        </p>
+      </fieldset>
+    </form>
+  </div>
+
+  <br>
+
+  <div class="form_3">
+    <h3>Form 3</h3>
+    <form action="" method="">
+      <p>What do you like?</p>
+      <p>
+        <input type="checkbox" id="taste_1" name="taste_cherry" value="cherry">
+        <label for="taste_1">I like Cherry</label>
+      </p>
+      <p>
+        <input type="checkbox" name="taste_banana" id="taste_2" value="banana">
+        <label for="taste_2">I like Banana</label>
+      </p>
+    </form>
+  </div>
+
+  <br>
+
+  <div class="form_4">
+    <h3>Form 4</h3>
+    <form action="" method="">
+      <p>Required fields are followed by <span aria-label="required">*</span>.</p>
+      <p>
+        <label for="username">Name: <span aria-label="required">*</span></label>
+        <input id="username" type="text" name="username" required />
+      </p>
+    </form>
+  </div>
+
+  <br>
+
+  <div class="form_5">
+    <h3>Form 5</h3>
+    <form action="" method="">
+
+    </form>
+  </div>
 </body>
 
 </html>
